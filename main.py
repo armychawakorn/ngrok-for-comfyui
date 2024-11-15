@@ -163,7 +163,7 @@ def prompt_worker(q, server):
 from pyngrok import ngrok
 
 async def run(server, address='', port=8188, verbose=True, call_on_start=None):
-    public_url = ngrok.connect(port, subdomain="stable-chawakorn")
+    public_url = ngrok.connect(port)
     print(f"Your app is live at: {public_url}")
     
     addresses = []
